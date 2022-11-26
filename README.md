@@ -1,1 +1,3 @@
-# Lichess daily puzzles
+# Lichess daily puzzle
+
+![](demo/random.jpg)
