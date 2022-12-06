@@ -33,8 +33,8 @@ class Puzzle {
 
   String sideTurn() {
     String pgnSeparator = " ";
-    // "W B => [W, B]"
-    if (gamePGN.isNotEmpty && gamePGN.split(pgnSeparator).length % 2 == 0) {
+    // "W B" => [W, B]
+    if (gamePGN.split(pgnSeparator).length % 2 == 0) {
       return "White";
     } else {
       return "Black";
