@@ -20,11 +20,11 @@ class Puzzle {
   factory Puzzle.fromJson(Map<String, dynamic> json) {
     return Puzzle(
         puzzleId: json["puzzle"]!["id"],
-        firstPlayerName: json["game"]!["players"][0]["name"] ?? "",
-        secondPlayerName: json["game"]!["players"][1]["name"] ?? "",
-        gamePGN: json["game"]!["pgn"] ?? "",
-        solutionPGN: json["puzzle"]!["solution"] ?? [],
-        gameThemes: json["puzzle"]!["themes"] ?? []);
+        firstPlayerName: json["game"]!["players"][0]["name"],
+        secondPlayerName: json["game"]!["players"][1]["name"],
+        gamePGN: json["game"]!["pgn"],
+        solutionPGN: json["puzzle"]!["solution"],
+        gameThemes: json["puzzle"]!["themes"]);
   }
 
   int movesToSolve() {

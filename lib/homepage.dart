@@ -3,7 +3,7 @@ import 'package:flutter_chess_board/flutter_chess_board.dart';
 import 'package:project/lichess_requests.dart';
 
 Padding customPaddingText(String text,
-    {double allScale = 26, double topScale = -1, double fontSize = 40}) {
+    {double allScale = 10, double topScale = -1, double fontSize = 40}) {
   return Padding(
       padding: topScale == -1
           ? EdgeInsets.all(allScale)
